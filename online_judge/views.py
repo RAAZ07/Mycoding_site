@@ -71,6 +71,9 @@ def home(request):
     problems = Problem.objects.all()
     return render(request, 'pages/home.html', {'problems': problems})
 
+def profile(request):
+    return render(request,'pages/profile.html',{})
+
 
 def submission(request, problem_id):
     problem = get_object_or_404(Problem, pk=problem_id)
@@ -165,3 +168,6 @@ def submission(request, problem_id):
 
     return render(request, 'pages/submission.html', {'problem': problem, 'compiled': compiled,
                                                      'code_text': code_text})
+
+
+    

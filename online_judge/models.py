@@ -22,6 +22,7 @@ class Problem(models.Model):
     solved = models.BooleanField(default=False)
     score = models.IntegerField(default=0)
     topic = models.CharField(null=False, max_length=30)
+    code_text= models.TextField( max_length=10000)
 
     def __str__(self):
         return self.title

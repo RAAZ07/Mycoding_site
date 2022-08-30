@@ -12,5 +12,7 @@ urlpatterns = [
     # /online_judge/signup
     path('signup', views.signup, name='signup'),
     # /online_judge/logout
-    path('logout', views.user_logout, name='logout')
+    path('logout', views.user_logout, name='logout'),
+    # /online_judge/profile
+    path('profile', views.profile, name='profile')
 ]
