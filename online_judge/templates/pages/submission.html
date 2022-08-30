@@ -337,7 +337,7 @@
                         <form role="form" enctype="multipart/form-data" method="post">
                             {% csrf_token %}
                             <textarea name="code" class="form-control " rows="15" placeholder="Enter Your Code" id="editing" spellcheck="false"
-                             oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);">{{ problem.code_text|linenumbers }}</textarea>
+                             oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);">{{ problem.code_text }}</textarea>
                             <button class="btn btn-success btn-md my-2 " type="submit ">Submit</button>
                             {% if compiled %}
                             <button id="outputWindow" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
